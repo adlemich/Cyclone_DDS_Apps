@@ -1,0 +1,11 @@
+module PingData
+{
+  @final
+  struct PingMsg
+  {
+    @key
+    long lPingID;
+    string sSourceHost;
+    string sPayload;
+  };
+};

@@ -1,0 +1,14 @@
+{
+   "Application" : {
+     "Name" : "DDS_PingPong_App",
+	 "Version" : "1.0"
+   },
+   "Logging" : {
+	 "LogLevel" : "error",
+	 "EnableConsoleLogging" : false,
+	 "EnableFileLogging" : false,
+	 "LogfileFolder" : "./logs",
+	 "LogfileMaxMB" : 1,
+	 "LogfileMaxFiles" : 3
+   }
+}

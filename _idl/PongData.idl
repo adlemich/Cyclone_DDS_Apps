@@ -1,0 +1,12 @@
+module PongData
+{
+  @final
+  struct PongMsg
+  {
+    @key
+    long lPongID;
+    long lOriPingID;
+    string sResponderHost;
+    string sPayload;
+  };
+};

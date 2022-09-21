@@ -1,0 +1,14 @@
+{
+   "Application" : {
+     "Name" : "DDS_Console_Tester",
+	 "Version" : "1.0"
+   },
+   "Logging" : {
+	 "LogLevel" : "debug",
+	 "EnableConsoleLogging" : false,
+	 "EnableFileLogging" : true,
+	 "LogfileFolder" : "./logs",
+	 "LogfileMaxMB" : 1,
+	 "LogfileMaxFiles" : 3
+   }
+}

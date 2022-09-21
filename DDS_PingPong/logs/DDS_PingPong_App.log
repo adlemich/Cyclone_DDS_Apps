@@ -1,0 +1,874 @@
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: # Application is starting UP, initalizing now! Enjoy the show...!
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: # All log entry times are UTC.
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> App_Configuration::dumpConfigToLog()
+2022-08-03 13:02:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ DUMPING ACTIVE CONFIGURATION +++++++++++++++++++
+2022-08-03 13:02:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Application Config
+2022-08-03 13:02:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Name = DDS_PingPong_App
+2022-08-03 13:02:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Version = 1.0
+2022-08-03 13:02:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Logging Config
+2022-08-03 13:02:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogLevel = debug
+2022-08-03 13:02:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableConsoleLogging = false
+2022-08-03 13:02:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableFileLogging = true
+2022-08-03 13:02:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileFolder = ./logs
+2022-08-03 13:02:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxMB = 1
+2022-08-03 13:02:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxFiles = 3
+2022-08-03 13:02:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ END OF ACTIVE CONFIGURATION +++++++++++++++++++++
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- App_Configuration::dumpConfigToLog(), RetVal [1]
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Pong()
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Pong] OK!
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Pong] OK!
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Pong()
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Ping()
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Ping] OK!
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Ping] OK!
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Ping()
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::startListening()
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::setParams()
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::getTopicInfo()
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::getTopicInfo()
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PING OK.
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PONG OK.
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_SubscriberRunner::setParams()
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::startListening()
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> main()
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::run()
+2022-08-03 13:02:15:08s [D] DDS_PingPong_App@MUC-1801049262: DDS Subscriber is waiting for a sample ...
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::sendPing(repeatNr = [10], sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: Sending PING(s) now!
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [1], sSourceHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [2], sSourceHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [3], sSourceHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [4], sSourceHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [5], sSourceHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [6], sSourceHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [7], sSourceHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [8], sSourceHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [9], sSourceHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [10], sSourceHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::sendPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [1], SourceHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [1], sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [1], lOriPingID = [1], sResponderHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [2], SourceHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [2], sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [2], lOriPingID = [2], sResponderHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [3], SourceHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [3], sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [3], lOriPingID = [3], sResponderHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [4], SourceHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [4], sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [4], lOriPingID = [4], sResponderHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [5], SourceHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [5], sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [5], lOriPingID = [5], sResponderHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [6], SourceHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [6], sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [6], lOriPingID = [6], sResponderHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [7], SourceHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [7], sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [7], lOriPingID = [7], sResponderHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [8], SourceHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [8], sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [8], lOriPingID = [8], sResponderHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [9], SourceHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [9], sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [9], lOriPingID = [9], sResponderHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [10], SourceHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [10], sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [10], lOriPingID = [10], sResponderHost = [MUC-1801049262}, sPayload = [Hallo!])
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <ID = [1], ResponderHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <ID = [2], ResponderHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <ID = [3], ResponderHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <ID = [4], ResponderHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <ID = [5], ResponderHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <ID = [6], ResponderHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <ID = [7], ResponderHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <ID = [8], ResponderHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <ID = [9], ResponderHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <ID = [10], ResponderHost = [MUC-1801049262], Payload = [Hallo!]>
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:02:21:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [19.838000] ms, Avg Latency over all resonses = [19.838000] ms
+2022-08-03 13:02:21:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:03:22:08s [D] DDS_PingPong_App@MUC-1801049262: <- main()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: # Application is starting UP, initalizing now! Enjoy the show...!
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: # All log entry times are UTC.
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> App_Configuration::dumpConfigToLog()
+2022-08-03 13:06:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ DUMPING ACTIVE CONFIGURATION +++++++++++++++++++
+2022-08-03 13:06:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Application Config
+2022-08-03 13:06:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Name = DDS_PingPong_App
+2022-08-03 13:06:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Version = 1.0
+2022-08-03 13:06:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Logging Config
+2022-08-03 13:06:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogLevel = debug
+2022-08-03 13:06:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableConsoleLogging = false
+2022-08-03 13:06:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableFileLogging = true
+2022-08-03 13:06:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileFolder = ./logs
+2022-08-03 13:06:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxMB = 1
+2022-08-03 13:06:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxFiles = 3
+2022-08-03 13:06:15:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ END OF ACTIVE CONFIGURATION +++++++++++++++++++++
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- App_Configuration::dumpConfigToLog(), RetVal [1]
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Pong()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Pong] OK!
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Pong] OK!
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Pong()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Ping()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Ping] OK!
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Ping] OK!
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Ping()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::startListening()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::setParams()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::getTopicInfo()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::getTopicInfo()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PING OK.
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PONG OK.
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_SubscriberRunner::setParams()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::startListening()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> main()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::run()
+2022-08-03 13:06:15:08s [D] DDS_PingPong_App@MUC-1801049262: DDS Subscriber is waiting for a sample ...
+2022-08-03 13:06:41:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::sendPing(repeatNr = [3], sPayload = [Test])
+2022-08-03 13:06:41:08s [I] DDS_PingPong_App@MUC-1801049262: Sending PING(s) now!
+2022-08-03 13:06:41:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [1], sSourceHost = [MUC-1801049262}, sPayload = [Test])
+2022-08-03 13:06:41:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [2], sSourceHost = [MUC-1801049262}, sPayload = [Test])
+2022-08-03 13:06:41:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [3], sSourceHost = [MUC-1801049262}, sPayload = [Test])
+2022-08-03 13:06:41:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::sendPing()
+2022-08-03 13:06:41:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [1], SourceHost = [MUC-1801049262], Payload = [Test]>
+2022-08-03 13:06:41:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:06:41:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: # Application is starting UP, initalizing now! Enjoy the show...!
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: # All log entry times are UTC.
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: -> App_Configuration::dumpConfigToLog()
+2022-08-03 13:09:18:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ DUMPING ACTIVE CONFIGURATION +++++++++++++++++++
+2022-08-03 13:09:18:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Application Config
+2022-08-03 13:09:18:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Name = DDS_PingPong_App
+2022-08-03 13:09:18:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Version = 1.0
+2022-08-03 13:09:18:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Logging Config
+2022-08-03 13:09:18:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogLevel = debug
+2022-08-03 13:09:18:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableConsoleLogging = false
+2022-08-03 13:09:18:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableFileLogging = true
+2022-08-03 13:09:18:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileFolder = ./logs
+2022-08-03 13:09:18:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxMB = 1
+2022-08-03 13:09:18:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxFiles = 3
+2022-08-03 13:09:18:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ END OF ACTIVE CONFIGURATION +++++++++++++++++++++
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: <- App_Configuration::dumpConfigToLog(), RetVal [1]
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Pong()
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Pong] OK!
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Pong] OK!
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Pong()
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Ping()
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Ping] OK!
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Ping] OK!
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Ping()
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::startListening()
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::setParams()
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::getTopicInfo()
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::getTopicInfo()
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PING OK.
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PONG OK.
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_SubscriberRunner::setParams()
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::startListening()
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: -> main()
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::run()
+2022-08-03 13:09:18:08s [D] DDS_PingPong_App@MUC-1801049262: DDS Subscriber is waiting for a sample ...
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::sendPing(repeatNr = [10], sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: Sending PING(s) now!
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [1], sSourceHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [2], sSourceHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [3], sSourceHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [4], sSourceHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [5], sSourceHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [6], sSourceHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [7], sSourceHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [8], sSourceHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [9], sSourceHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [10], sSourceHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::sendPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [1], SourceHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [1], sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [1], lOriPingID = [1], sResponderHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [2], SourceHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [2], sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [2], lOriPingID = [2], sResponderHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [3], SourceHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [3], sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [3], lOriPingID = [3], sResponderHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [4], SourceHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [4], sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [4], lOriPingID = [4], sResponderHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [5], SourceHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [5], sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [5], lOriPingID = [5], sResponderHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [6], SourceHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [6], sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [6], lOriPingID = [6], sResponderHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [7], SourceHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [7], sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [7], lOriPingID = [7], sResponderHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [8], SourceHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [8], sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [8], lOriPingID = [8], sResponderHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [9], SourceHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [9], sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [9], lOriPingID = [9], sResponderHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [10], SourceHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [10], sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [10], lOriPingID = [10], sResponderHost = [MUC-1801049262}, sPayload = [HALLO!])
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [1], original PingID = [1], ResponderHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [11.628000] ms, Avg Latency over all resonses = [11.628000] ms
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [2], original PingID = [2], ResponderHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [12.631000] ms, Avg Latency over all resonses = [12.129500] ms
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [3], original PingID = [3], ResponderHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [12.631000] ms, Avg Latency over all resonses = [12.296667] ms
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [4], original PingID = [4], ResponderHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [13.630000] ms, Avg Latency over all resonses = [12.630000] ms
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [5], original PingID = [5], ResponderHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [13.630000] ms, Avg Latency over all resonses = [12.830000] ms
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [6], original PingID = [6], ResponderHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [14.629000] ms, Avg Latency over all resonses = [13.129833] ms
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [7], original PingID = [7], ResponderHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [15.630000] ms, Avg Latency over all resonses = [13.487000] ms
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [8], original PingID = [8], ResponderHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [16.631000] ms, Avg Latency over all resonses = [13.880000] ms
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [9], original PingID = [9], ResponderHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [16.631000] ms, Avg Latency over all resonses = [14.185667] ms
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [10], original PingID = [10], ResponderHost = [MUC-1801049262], Payload = [HALLO!]>
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:09:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [17.630000] ms, Avg Latency over all resonses = [14.530100] ms
+2022-08-03 13:09:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::sendPing(repeatNr = [20], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Sending PING(s) now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [11], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [12], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [13], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [14], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [15], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [16], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [17], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [11], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [18], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [19], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [11], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [20], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [11], lOriPingID = [11], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [21], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [12], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [22], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [12], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [23], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [12], lOriPingID = [12], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [24], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [13], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [25], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [26], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [13], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [27], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [13], lOriPingID = [13], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [28], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [14], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [29], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [14], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [30], sSourceHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::sendPing()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [14], lOriPingID = [14], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [15], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [15], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [15], lOriPingID = [15], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [16], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [16], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [16], lOriPingID = [16], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [11], original PingID = [11], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [1.000000] ms, Avg Latency over all resonses = [1.000000] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [12], original PingID = [12], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [2.001000] ms, Avg Latency over all resonses = [1.500500] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [13], original PingID = [13], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [2.001000] ms, Avg Latency over all resonses = [1.667333] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [14], original PingID = [14], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [3.001000] ms, Avg Latency over all resonses = [2.000750] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [15], original PingID = [15], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [3.001000] ms, Avg Latency over all resonses = [2.200800] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [16], original PingID = [16], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [5.001000] ms, Avg Latency over all resonses = [2.667500] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [17], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [17], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [17], lOriPingID = [17], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [18], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [18], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [18], lOriPingID = [18], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [19], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [19], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [19], lOriPingID = [19], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [20], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [20], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [20], lOriPingID = [20], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [21], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [21], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [21], lOriPingID = [21], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [22], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [22], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [22], lOriPingID = [22], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [23], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [23], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [23], lOriPingID = [23], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [24], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [24], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [24], lOriPingID = [24], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [25], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [25], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [25], lOriPingID = [25], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [26], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [26], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [26], lOriPingID = [26], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [27], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [27], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [27], lOriPingID = [27], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [28], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [28], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [28], lOriPingID = [28], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [29], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [29], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [29], lOriPingID = [29], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [30], SourceHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [30], sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [30], lOriPingID = [30], sResponderHost = [MUC-1801049262}, sPayload = [DAS###############################################IST##########################################LANG])
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [17], original PingID = [17], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [12.003000] ms, Avg Latency over all resonses = [4.001143] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [18], original PingID = [18], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [13.003000] ms, Avg Latency over all resonses = [5.126375] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [19], original PingID = [19], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [16.010000] ms, Avg Latency over all resonses = [6.335667] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [20], original PingID = [20], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [17.005000] ms, Avg Latency over all resonses = [7.402600] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [21], original PingID = [21], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [18.007000] ms, Avg Latency over all resonses = [8.366636] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [22], original PingID = [22], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [19.004000] ms, Avg Latency over all resonses = [9.253083] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [23], original PingID = [23], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [20.005000] ms, Avg Latency over all resonses = [10.080154] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [24], original PingID = [24], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [21.005000] ms, Avg Latency over all resonses = [10.860500] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [25], original PingID = [25], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [22.006000] ms, Avg Latency over all resonses = [11.603533] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [26], original PingID = [26], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [23.005000] ms, Avg Latency over all resonses = [12.316125] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [27], original PingID = [27], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [24.005000] ms, Avg Latency over all resonses = [13.003706] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [28], original PingID = [28], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [25.007000] ms, Avg Latency over all resonses = [13.670556] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [29], original PingID = [29], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [26.007000] ms, Avg Latency over all resonses = [14.319842] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [30], original PingID = [30], ResponderHost = [MUC-1801049262], Payload = [DAS###############################################IST##########################################LANG]>
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:10:23:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [26.007000] ms, Avg Latency over all resonses = [14.904200] ms
+2022-08-03 13:10:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:12:26:08s [D] DDS_PingPong_App@MUC-1801049262: <- main()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: # Application is starting UP, initalizing now! Enjoy the show...!
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: # All log entry times are UTC.
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: -> App_Configuration::dumpConfigToLog()
+2022-08-03 13:13:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ DUMPING ACTIVE CONFIGURATION +++++++++++++++++++
+2022-08-03 13:13:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Application Config
+2022-08-03 13:13:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Name = DDS_PingPong_App
+2022-08-03 13:13:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Version = 1.0
+2022-08-03 13:13:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Logging Config
+2022-08-03 13:13:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogLevel = debug
+2022-08-03 13:13:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableConsoleLogging = false
+2022-08-03 13:13:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableFileLogging = true
+2022-08-03 13:13:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileFolder = ./logs
+2022-08-03 13:13:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxMB = 1
+2022-08-03 13:13:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxFiles = 3
+2022-08-03 13:13:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ END OF ACTIVE CONFIGURATION +++++++++++++++++++++
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: <- App_Configuration::dumpConfigToLog(), RetVal [1]
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Pong()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Pong] OK!
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Pong] OK!
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Pong()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Ping()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Ping] OK!
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Ping] OK!
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Ping()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::startListening()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::setParams()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::getTopicInfo()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::getTopicInfo()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PING OK.
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PONG OK.
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_SubscriberRunner::setParams()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::startListening()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: -> main()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::run()
+2022-08-03 13:13:14:08s [D] DDS_PingPong_App@MUC-1801049262: DDS Subscriber is waiting for a sample ...
+2022-08-03 13:13:22:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::sendPing(repeatNr = [1], sPayload = [TETETETET])
+2022-08-03 13:13:22:08s [I] DDS_PingPong_App@MUC-1801049262: Sending PING(s) now!
+2022-08-03 13:13:22:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [1], sSourceHost = [MUC-1801049262}, sPayload = [TETETETET])
+2022-08-03 13:13:22:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::sendPing()
+2022-08-03 13:13:22:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [1], SourceHost = [MUC-1801049262], Payload = [TETETETET]>
+2022-08-03 13:13:22:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:13:22:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:13:22:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [1], sPayload = [TETETETET])
+2022-08-03 13:13:22:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [1], lOriPingID = [1], sResponderHost = [MUC-1801049262}, sPayload = [TETETETET])
+2022-08-03 13:13:22:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:13:22:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:13:22:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [1], original PingID = [1], ResponderHost = [MUC-1801049262], Payload = [TETETETET]>
+2022-08-03 13:13:22:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:13:22:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [5.000000] ms, Avg Latency over all resonses = [5.000000] ms
+2022-08-03 13:13:22:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:13:29:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::sendPing(repeatNr = [1], sPayload = [sdlkjfhdsiuhgfioasdghfdsiuhgfgdsgfdfg])
+2022-08-03 13:13:29:08s [I] DDS_PingPong_App@MUC-1801049262: Sending PING(s) now!
+2022-08-03 13:13:29:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [2], sSourceHost = [MUC-1801049262}, sPayload = [sdlkjfhdsiuhgfioasdghfdsiuhgfgdsgfdfg])
+2022-08-03 13:13:29:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::sendPing()
+2022-08-03 13:13:29:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [2], SourceHost = [MUC-1801049262], Payload = [sdlkjfhdsiuhgfioasdghfdsiuhgfgdsgfdfg]>
+2022-08-03 13:13:29:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-03 13:13:29:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-03 13:13:29:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [2], sPayload = [sdlkjfhdsiuhgfioasdghfdsiuhgfgdsgfdfg])
+2022-08-03 13:13:29:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [2], lOriPingID = [2], sResponderHost = [MUC-1801049262}, sPayload = [sdlkjfhdsiuhgfioasdghfdsiuhgfgdsgfdfg])
+2022-08-03 13:13:29:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-03 13:13:29:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-03 13:13:29:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PONG] <- <PongID = [2], original PingID = [2], ResponderHost = [MUC-1801049262], Payload = [sdlkjfhdsiuhgfioasdghfdsiuhgfgdsgfdfg]>
+2022-08-03 13:13:29:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPong()
+2022-08-03 13:13:29:08s [I] DDS_PingPong_App@MUC-1801049262: Response from [MUC-1801049262], Payload OK [1], Latency = [14.591000] ms, Avg Latency over all resonses = [14.591000] ms
+2022-08-03 13:13:29:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPong()
+2022-08-03 13:13:34:08s [D] DDS_PingPong_App@MUC-1801049262: <- main()
+2022-08-03 13:13:34:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-08 19:25:14:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-08 19:25:14:08s [D] DDS_PingPong_App@MUC-1801049262: # Application is starting UP, initalizing now! Enjoy the show...!
+2022-08-08 19:25:14:08s [D] DDS_PingPong_App@MUC-1801049262: # All log entry times are UTC.
+2022-08-08 19:25:14:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-08 19:25:14:08s [D] DDS_PingPong_App@MUC-1801049262: -> App_Configuration::dumpConfigToLog()
+2022-08-08 19:25:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ DUMPING ACTIVE CONFIGURATION +++++++++++++++++++
+2022-08-08 19:25:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Application Config
+2022-08-08 19:25:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Name = DDS_PingPong_App
+2022-08-08 19:25:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Version = 1.0
+2022-08-08 19:25:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Logging Config
+2022-08-08 19:25:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogLevel = debug
+2022-08-08 19:25:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableConsoleLogging = false
+2022-08-08 19:25:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableFileLogging = true
+2022-08-08 19:25:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileFolder = ./logs
+2022-08-08 19:25:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxMB = 1
+2022-08-08 19:25:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxFiles = 3
+2022-08-08 19:25:14:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ END OF ACTIVE CONFIGURATION +++++++++++++++++++++
+2022-08-08 19:25:14:08s [D] DDS_PingPong_App@MUC-1801049262: <- App_Configuration::dumpConfigToLog(), RetVal [1]
+2022-08-08 19:25:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Pong()
+2022-08-08 19:25:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Pong] OK!
+2022-08-08 19:25:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Pong] OK!
+2022-08-08 19:25:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Pong()
+2022-08-08 19:25:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Ping()
+2022-08-08 19:25:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Ping] OK!
+2022-08-08 19:25:15:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Ping] OK!
+2022-08-08 19:25:15:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Ping()
+2022-08-08 19:25:15:08s [D] DDS_PingPong_App@MUC-1801049262: -> main()
+2022-08-08 19:25:36:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::startPingListener()
+2022-08-08 19:25:36:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::stopPongListener()
+2022-08-08 19:25:36:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::stopPongListener()
+2022-08-08 19:25:36:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::setParams()
+2022-08-08 19:25:36:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::getTopicInfo()
+2022-08-08 19:25:36:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::getTopicInfo()
+2022-08-08 19:25:36:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PING OK.
+2022-08-08 19:25:36:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_SubscriberRunner::setParams()
+2022-08-08 19:25:36:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::startPingListener()
+2022-08-08 19:25:36:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::run()
+2022-08-08 19:25:36:08s [D] DDS_PingPong_App@MUC-1801049262: DDS Subscriber is waiting for a sample ...
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::sendPing(repeatNr = [1], sPayload = [fdsfdsf])
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::startPongListener()
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::stopPingListener()
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_SubscriberRunner::run()
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::stopPingListener()
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::setParams()
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::getTopicInfo()
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::getTopicInfo()
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PONG OK.
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_SubscriberRunner::setParams()
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::startPongListener()
+2022-08-08 19:25:43:08s [I] DDS_PingPong_App@MUC-1801049262: Sending PING(s) now!
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::run()
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: DDS Subscriber is waiting for a sample ...
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Ping] (iPingID = [1], sSourceHost = [MUC-1801049262}, sPayload = [fdsfdsf])
+2022-08-08 19:25:43:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::sendPing()
+2022-08-08 19:25:58:08s [D] DDS_PingPong_App@MUC-1801049262: <- main()
+2022-08-08 19:25:58:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: # Application is starting UP, initalizing now! Enjoy the show...!
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: # All log entry times are UTC.
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: -> App_Configuration::dumpConfigToLog()
+2022-08-08 19:27:05:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ DUMPING ACTIVE CONFIGURATION +++++++++++++++++++
+2022-08-08 19:27:05:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Application Config
+2022-08-08 19:27:05:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Name = DDS_PingPong_App
+2022-08-08 19:27:05:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Version = 1.0
+2022-08-08 19:27:05:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Logging Config
+2022-08-08 19:27:05:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogLevel = debug
+2022-08-08 19:27:05:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableConsoleLogging = false
+2022-08-08 19:27:05:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableFileLogging = true
+2022-08-08 19:27:05:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileFolder = ./logs
+2022-08-08 19:27:05:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxMB = 1
+2022-08-08 19:27:05:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxFiles = 3
+2022-08-08 19:27:05:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ END OF ACTIVE CONFIGURATION +++++++++++++++++++++
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: <- App_Configuration::dumpConfigToLog(), RetVal [1]
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Pong()
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Pong] OK!
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Pong] OK!
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Pong()
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Ping()
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Ping] OK!
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Ping] OK!
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Ping()
+2022-08-08 19:27:05:08s [D] DDS_PingPong_App@MUC-1801049262: -> main()
+2022-08-08 19:27:08:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::startPingListener()
+2022-08-08 19:27:08:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::stopPongListener()
+2022-08-08 19:27:08:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::stopPongListener()
+2022-08-08 19:27:08:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::setParams()
+2022-08-08 19:27:08:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::getTopicInfo()
+2022-08-08 19:27:08:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::getTopicInfo()
+2022-08-08 19:27:08:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PING OK.
+2022-08-08 19:27:08:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_SubscriberRunner::setParams()
+2022-08-08 19:27:08:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::startPingListener()
+2022-08-08 19:27:08:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::run()
+2022-08-08 19:27:08:08s [D] DDS_PingPong_App@MUC-1801049262: DDS Subscriber is waiting for a sample ...
+2022-08-08 19:27:20:08s [D] DDS_PingPong_App@MUC-1801049262: <- main()
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: # Application is starting UP, initalizing now! Enjoy the show...!
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: # All log entry times are UTC.
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: -> App_Configuration::dumpConfigToLog()
+2022-08-08 19:28:04:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ DUMPING ACTIVE CONFIGURATION +++++++++++++++++++
+2022-08-08 19:28:04:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Application Config
+2022-08-08 19:28:04:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Name = DDS_PingPong_App
+2022-08-08 19:28:04:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Version = 1.0
+2022-08-08 19:28:04:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Logging Config
+2022-08-08 19:28:04:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogLevel = debug
+2022-08-08 19:28:04:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableConsoleLogging = false
+2022-08-08 19:28:04:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableFileLogging = true
+2022-08-08 19:28:04:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileFolder = ./logs
+2022-08-08 19:28:04:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxMB = 1
+2022-08-08 19:28:04:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxFiles = 3
+2022-08-08 19:28:04:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ END OF ACTIVE CONFIGURATION +++++++++++++++++++++
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: <- App_Configuration::dumpConfigToLog(), RetVal [1]
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Pong()
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Pong] OK!
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Pong] OK!
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Pong()
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Ping()
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Ping] OK!
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Ping] OK!
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Ping()
+2022-08-08 19:28:04:08s [D] DDS_PingPong_App@MUC-1801049262: -> main()
+2022-08-08 19:28:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::startPingListener()
+2022-08-08 19:28:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::stopPongListener()
+2022-08-08 19:28:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::stopPongListener()
+2022-08-08 19:28:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::setParams()
+2022-08-08 19:28:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::getTopicInfo()
+2022-08-08 19:28:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::getTopicInfo()
+2022-08-08 19:28:23:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PING OK.
+2022-08-08 19:28:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_SubscriberRunner::setParams()
+2022-08-08 19:28:23:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::startPingListener()
+2022-08-08 19:28:23:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::run()
+2022-08-08 19:28:23:08s [D] DDS_PingPong_App@MUC-1801049262: DDS Subscriber is waiting for a sample ...
+2022-08-08 19:28:51:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [1], SourceHost = [MUC-1801049262], Payload = [sdfdsf]>
+2022-08-08 19:28:51:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-08 19:28:51:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-08 19:28:51:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [1], sPayload = [sdfdsf])
+2022-08-08 19:28:51:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [1], lOriPingID = [1], sResponderHost = [MUC-1801049262}, sPayload = [sdfdsf])
+2022-08-08 19:28:51:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-08 19:28:51:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-08 19:29:18:08s [D] DDS_PingPong_App@MUC-1801049262: <- main()
+2022-08-08 19:29:18:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-08 19:29:18:08s [D] DDS_PingPong_App@MUC-1801049262: # Application is going DOWN. Cleaning up!
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: # Application is starting UP, initalizing now! Enjoy the show...!
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: # All log entry times are UTC.
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: ######################################################################################
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: -> App_Configuration::dumpConfigToLog()
+2022-08-08 19:31:06:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ DUMPING ACTIVE CONFIGURATION +++++++++++++++++++
+2022-08-08 19:31:06:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Application Config
+2022-08-08 19:31:06:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Name = DDS_PingPong_App
+2022-08-08 19:31:06:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Application.Version = 1.0
+2022-08-08 19:31:06:08s [I] DDS_PingPong_App@MUC-1801049262: +++ Logging Config
+2022-08-08 19:31:06:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogLevel = debug
+2022-08-08 19:31:06:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableConsoleLogging = false
+2022-08-08 19:31:06:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.EnableFileLogging = true
+2022-08-08 19:31:06:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileFolder = ./logs
+2022-08-08 19:31:06:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxMB = 1
+2022-08-08 19:31:06:08s [I] DDS_PingPong_App@MUC-1801049262: +++++ Logging.LogfileMaxFiles = 3
+2022-08-08 19:31:06:08s [I] DDS_PingPong_App@MUC-1801049262: +++++++++++++++++++++ END OF ACTIVE CONFIGURATION +++++++++++++++++++++
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: <- App_Configuration::dumpConfigToLog(), RetVal [1]
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Pong()
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Pong] OK!
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Pong] OK!
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Pong()
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::createTopicWriter_Ping()
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Topic [Ping] OK!
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: Creating Writer for topic [Ping] OK!
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::createTopicWriter_Ping()
+2022-08-08 19:31:06:08s [D] DDS_PingPong_App@MUC-1801049262: -> main()
+2022-08-08 19:31:59:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::startPingListener()
+2022-08-08 19:31:59:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::stopPongListener()
+2022-08-08 19:31:59:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::stopPongListener()
+2022-08-08 19:31:59:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::setParams()
+2022-08-08 19:31:59:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::getTopicInfo()
+2022-08-08 19:31:59:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::getTopicInfo()
+2022-08-08 19:31:59:08s [D] DDS_PingPong_App@MUC-1801049262: Creating DDS Reader for Topic PING OK.
+2022-08-08 19:31:59:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_SubscriberRunner::setParams()
+2022-08-08 19:31:59:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::startPingListener()
+2022-08-08 19:31:59:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_SubscriberRunner::run()
+2022-08-08 19:31:59:08s [D] DDS_PingPong_App@MUC-1801049262: DDS Subscriber is waiting for a sample ...
+2022-08-08 19:32:08:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [1], SourceHost = [MUC-1801049262], Payload = [HALLO]>
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-08 19:32:08:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [1], sPayload = [HALLO])
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [1], lOriPingID = [1], sResponderHost = [MUC-1801049262}, sPayload = [HALLO])
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-08 19:32:08:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [2], SourceHost = [MUC-1801049262], Payload = [HALLO]>
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-08 19:32:08:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [2], sPayload = [HALLO])
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [2], lOriPingID = [2], sResponderHost = [MUC-1801049262}, sPayload = [HALLO])
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-08 19:32:08:08s [I] DDS_PingPong_App@MUC-1801049262: DDS RECEIVED MESSAGE on Topic [PING] <- <ID = [3], SourceHost = [MUC-1801049262], Payload = [HALLO]>
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::onPing()
+2022-08-08 19:32:08:08s [I] DDS_PingPong_App@MUC-1801049262: We received a PING - sending PONG now!
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: -> DDS_Participant::publishMsg_Pong(iPongID = [3], sPayload = [HALLO])
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: DDS PUBLISH ok -> Topic [Pong] (msg.lPongID = [3], lOriPingID = [3], sResponderHost = [MUC-1801049262}, sPayload = [HALLO])
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::publishMsg_Pong()
+2022-08-08 19:32:08:08s [D] DDS_PingPong_App@MUC-1801049262: <- DDS_Participant::onPing()
+2022-08-08 19:32:43:08s [D] DDS_PingPong_App@MUC-1801049262: <- main()
